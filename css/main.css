@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;   
+	margin: 0;
+	padding: 0; 
+	}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background:#fff;
+	}
+
+/* TOP BAR ***************/
+
+#topbar{
+	width: 100%;
+	height: 100px;
+	background: #5A8AD3;
+	color: #fff;
+	padding: 10px 30px 0 30px;
+	margin-bottom: 20px;
+	}
+
+#topbar h2{
+	margin-top: 20px;
+	float: right;
+	font-weight: 100;
+	}
+
+
+/* MENU CONTAINER ***************/
+
+#icon_menu {
+	width:980px;
+	margin:0 auto 0 auto;
+	}
+
+#icon_menu ul li {
+	list-style: none;
+	text-decoration: none;
+	float: left;
+	}
+
+#icon_menu li {
+	margin: 25px;
+	}
+
+#icon_menu a {
+	text-decoration: none;
+	color: #999;
+	}
+
+#icon_menu a:hover {
+	text-decoration: none;
+	color: #5A8AD3;
+	}
+
+
+/* ITEM DEFAULT ***************/
+
+ .item {
+	display: inline-block;
+	position: relative;
+	font-size: 1em;
+	width: 180px;
+	height: 180px;
+	padding-top:180px; 
+	text-align: center;
+	}
+
+.item span {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition:    opacity 0.3s;
+	-o-transition:      opacity 0.3s;
+	}
+
+.item:hover span {
+	opacity: 1;
+	}
+
+/* SPRITES ***************/
+
+/* Icon Mozilla */
+.ic_mozilla {background: url('../images/ic_mozilla_hispano.png') no-repeat;}
+.ic_mozilla_hover {background: url('../images/ic_mozilla_hispano.png') no-repeat; background-position: left bottom;}
+/* Icon Projects */
+.ic_projects {background: url('../images/ic_projects.png') no-repeat;}
+.ic_projects_hover {background: url('../images/ic_projects.png') no-repeat; background-position: left bottom;}
+/* Icon Resources */
+.ic_resources {background: url('../images/ic_resources.png') no-repeat;}
+.ic_resources_hover {background: url('../images/ic_resources.png') no-repeat; background-position: left bottom;}
+/* Icon Forums */
+.ic_forums {background: url('../images/ic_forums.png') no-repeat;}
+.ic_forums_hover {background: url('../images/ic_forums.png') no-repeat; background-position: left bottom;}
+/* Icon Events */
+.ic_events {background: url('../images/ic_events.png') no-repeat;}
+.ic_events_hover {background: url('../images/ic_events.png') no-repeat; background-position: left bottom;}
+/* Icon Meetings */
+.ic_meetings {background: url('../images/ic_meetings.png') no-repeat;}
+.ic_meetings_hover {background: url('../images/ic_meetings.png') no-repeat; background-position: left bottom;}
+/* Icon Contributors */
+.ic_contributors {background: url('../images/ic_contributors.png') no-repeat;}
+.ic_contributors_hover {background: url('../images/ic_contributors.png') no-repeat; background-position: left bottom;}
+/* Icon Documentation */
+.ic_documentation {background: url('../images/ic_documentation.png') no-repeat;}
+.ic_documentation_hover {background: url('../images/ic_documentation.png') no-repeat; background-position: left bottom;}
+
+
+/* MEDIA QUERIES TEST ***************/
+
+
+@media only screen and (max-width: 980px) { 
+	
+	#icon_menu {
+		width:100%;
+		text-align: center;
+		margin:0 auto 0 auto;
+		}
+  }
+
+@media only screen and (max-width: 420px) { 
+	
+	#icon_menu {
+		width:220px;
+		text-align: center;
+		margin:0 auto 0 auto;
+		}
+
+	#topbar {
+		text-align: center;
+		}
+  }
+
